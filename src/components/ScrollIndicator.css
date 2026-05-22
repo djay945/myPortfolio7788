@@ -1,0 +1,10 @@
+/* SCROLL INDICATOR */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  z-index: 200;
+  transition: width 0.1s;
+}

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f0f13;
+  --bg2: #16161d;
+  --bg3: #1e1e28;
+  --surface: #23232f;
+  --accent: #7c6cf8;
+  --accent2: #a78bfa;
+  --text: #f0f0f6;
+  --text2: #a0a0b8;
+  --border: #2e2e3e;
+  --card: #1a1a24;
+  --green: #4ade80;
+}
+
+html.light {
+  --bg: #ffffff;
+  --bg2: #f0f0f8;
+  --bg3: #e8e8f4;
+  --surface: #fff;
+  --accent: #6d5ef5;
+  --accent2: #7c6cf8;
+  --text: #1a1a2e;
+  --text2: #5a5a78;
+  --border: #ddddf0;
+  --card: #fff;
+  --green: #16a34a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
+  text-align: justify;
+}
+
+/* GLOBAL SECTION DEFAULTS */
+section {
+  padding: 100px 2rem 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADERS - REUSABLE */
+.section-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  color: var(--text2);
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+/* GLOBAL MOBILE */
+@media (max-width: 768px) {
+  section {
+    padding: 80px 1rem 40px;
+  }
+
+  /* Section Headers Mobile */
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .section-sub {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+p {
+  color: var(--text2);
+  align-content: justify;
+}
