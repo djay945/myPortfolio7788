@@ -43,7 +43,7 @@
 }
 
 .tl-content {
-  flex: 1;
+  flex: ;
   padding-bottom: 36px;
 }
 
@@ -62,7 +62,7 @@
 
 .tl-role {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 00;
   margin-bottom: 4px;
 }
 
@@ -82,6 +82,8 @@
   font-size: 14px;
   color: var(--text2);
   line-height: 1.6;
+  font-weight: 1500;
+  text-align:initial;
 }
 
 .badge {
@@ -111,11 +113,11 @@
   }
 
   .tl-role {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .tl-company {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .tl-desc {
