@@ -1,12 +1,27 @@
 import { href } from "react-router-dom";
 
+// Use import.meta.url with new URL(...) so Vite includes these assets in the build
+const avatarImage = new URL('./assets/that-one-time.webp', import.meta.url).href;
+const cakies1 = new URL('./assets/cakies.png', import.meta.url).href;
+const cakiesPortal = new URL('./assets/cakies-artstPortal.png', import.meta.url).href;
+const cakiesOrder = new URL('./assets/cakies-order.png', import.meta.url).href;
+const healthMain = new URL('./assets/healthMain.jfif', import.meta.url).href;
+const healthFeed = new URL('./assets/healthFeed.jfif', import.meta.url).href;
+const healthPol = new URL('./assets/HealthPol.jfif', import.meta.url).href;
+const nenasaMob = new URL('./assets/nenasa/nenasa_mob.jpeg', import.meta.url).href;
+const nenasaDesk1 = new URL('./assets/nenasa/nenasa_desk_1.png', import.meta.url).href;
+const nenasaDesk2 = new URL('./assets/nenasa/nenasa_desk_2.png', import.meta.url).href;
+const pfDsk = new URL('./assets/pf_dsk.png', import.meta.url).href;
+const studentC = new URL('./assets/student_c.jpeg', import.meta.url).href;
+const iotVideo = new URL('./assets/iot.mp4', import.meta.url).href;
+
 export const portfolioData = {
   personal: {
     name: 'Dananjaya Atapattu',
     role: 'Software Engineering Undergraduate',
     bio: 'I am a Passionate software engineering undergraduate with hands-on experience in full-stack development, building scalable web applications using technologies such as React.js, Vue.js, Node.js, Spring Boot, and Maven architecture. I enjoy transforming ideas into practical digital solutions and have experience developing real-world client projects from requirement gathering to deployment. Driven by problem-solving and continuous learning, I am committed to creating clean, efficient, and user-focused software solutions. ',
     avatar: '👨‍💻',
-    avatarImage: '/src/assets/That one time.webp',
+    avatarImage: avatarImage,
     location: 'Colombo, Sri Lanka',
     email: 'dananjaya24945@gmail.com',
     linkedin: 'linkedin.com/in/madhawa-dananjaya-/',
@@ -91,9 +106,9 @@ export const portfolioData = {
         'A full-stack web application built for two local cake artists to manage products and orders. Designed and implemented both frontend and backend, working closely with the artists throughout the project to gather requirements and understand their business needs. Features include user-friendly product management, real-time order tracking, customer interactions, and integrated Stripe payment processing. Deployed with responsive design for seamless access across all devices.',
       tags: ['React', 'Node.js', 'Firebase', 'Stripe'],
       images: [
-        'src/assets/cakies!.png',
-        'src/assets/Cakies! artstPortal.png',
-        'src/assets/cakies! order.png',
+        cakies1,
+        cakiesPortal,
+        cakiesOrder,
       ],
       links: [
         { label: 'GitHub', href: 'https://github.com/it24104290/cakies-react2' },
@@ -108,9 +123,9 @@ export const portfolioData = {
         'A full-stack Health Insurance Management System developed as a Year 2 Semester 1 university group project, emphasizing enterprise-level backend architecture, database integration, and modular system design. Built with Java backend, HTML, CSS, and MSSQL database. Contributed by implementing the review and feedback management system, and containerized and deployed the entire system using Docker for scalable, consistent deployments across environments.',
       tags: ['Java', 'HTML', 'CSS', 'MSSQL', 'Docker'],
       images: [
-        'src/assets/healthMain.jfif',
-        'src/assets/healthFeed.jfif',
-        'src/assets/HealthPol.jfif',
+        healthMain,
+        healthFeed,
+        healthPol,
       ],
       liveNote: 'The system is deployed using Docker. You can try it by your ip address and port 8080 (e.g., http://localhost:8080) after running the Docker container.',
       links: [
@@ -128,9 +143,9 @@ export const portfolioData = {
       ],
       tags: ['React','Java','MongoDB', 'PostgreSQL', 'REST API'],
       images:[
-        'src/assets/nenasa/nenasa_mob.jpeg',
-        'src/assets/nenasa/nenasa_desk.1.png',
-        'src/assets/nenasa/nenasa_desk.2.png'
+        nenasaMob,
+        nenasaDesk1,
+        nenasaDesk2
       ],
       links: [
         {
@@ -153,7 +168,7 @@ export const portfolioData = {
         'Developed and hosted a responsive personal portfolio website to showcase my projects, technical skills, and professional experience. Built using React.js and CSS with a clean, modern user interface focused on user experience and accessibility. Integrated EmailJS to enable direct communication through a functional contact form. Designed the portfolio to provide a professional overview of my background and development work.',
       tags: ['React', 'Vite', 'CSS', 'JavaScript'],
       images: [
-        'src/assets/pf_dsk.png',
+        pfDsk,
       ],
       links: [{ label: 'GitHub', href: '#' }],
     },
@@ -166,7 +181,7 @@ export const portfolioData = {
         'Developed a comprehensive student course management system featuring login validation, user authentication, and CRUD operations with UI enhancements. Specifically led the review management feature, implementing both frontend and backend functionality with database integration to enable students to submit and view course reviews. ',
       tags: ['Java', 'Spring Boot', 'HTML', 'CSS',],
       images: [
-        'src/assets/student_c.jpeg',
+        studentC,
       ],
       links: [{ label: 'GitHub', href: '#' }],
     },
@@ -179,7 +194,7 @@ export const portfolioData = {
         'Designed the structure and implemented the code with C++ to control the ultrasonic sensor and LED indicators, ensuring accurate water level detection and real-time monitoring.',
       ],
       tags: ['Arduino', 'C++', 'IOT'],
-      video: 'src/assets/iot.mp4',
+      video: iotVideo,
       links: [{ label: 'GitHub', href: '#' }],
     },
 
