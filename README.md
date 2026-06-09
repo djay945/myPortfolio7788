@@ -1,6 +1,6 @@
-# Alex Fernando Portfolio - React App
+# Dananjaya Atapattu Portfolio - React App
 
-A modern, fully-responsive portfolio website built with React, Vite, and custom CSS animations.
+A modern, fully-responsive portfolio website built with React, Vite, and custom CSS animations. Showcasing software engineering projects and experience in full-stack development.
 
 ## 📁 Project Structure
 
@@ -116,7 +116,3 @@ Update contact links in Contact.jsx to point to real URLs. Currently they're pla
 - CSS transitions for smooth animations
 - Optimized asset delivery with Vite
 - Minified production build
-
-## 📄 License
-
-This project is open source and available for personal use.

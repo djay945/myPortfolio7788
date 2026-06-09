@@ -1,8 +1,10 @@
+import { href } from "react-router-dom";
+
 export const portfolioData = {
   personal: {
     name: 'Dananjaya Atapattu',
     role: 'Software Engineering Undergraduate',
-    bio: 'Passionate software engineering undergraduate with hands-on experience in full-stack development, building scalable web applications using technologies such as React.js, Vue.js, Node.js, Spring Boot, and Firebase. I enjoy transforming ideas into practical digital solutions and have experience developing real-world client projects from requirement gathering to deployment. Driven by problem-solving and continuous learning, I am committed to creating clean, efficient, and user-focused software solutions. ',
+    bio: 'I am a Passionate software engineering undergraduate with hands-on experience in full-stack development, building scalable web applications using technologies such as React.js, Vue.js, Node.js, Spring Boot, and Maven architecture. I enjoy transforming ideas into practical digital solutions and have experience developing real-world client projects from requirement gathering to deployment. Driven by problem-solving and continuous learning, I am committed to creating clean, efficient, and user-focused software solutions. ',
     avatar: '👨‍💻',
     avatarImage: '/src/assets/That one time.webp',
     location: 'Colombo, Sri Lanka',
@@ -11,6 +13,11 @@ export const portfolioData = {
     github: 'github.com/it24104290',
     status: 'Open to opportunities',
   },
+
+  stats: [
+    { label: 'Projects', value: '5+' },
+    { label: 'Work Experience', value: '2+ Years' },
+  ],
   
 
   skills: [
@@ -107,10 +114,37 @@ export const portfolioData = {
       ],
       liveNote: 'The system is deployed using Docker. You can try it by your ip address and port 8080 (e.g., http://localhost:8080) after running the Docker container.',
       links: [
-        { label: 'GitHub', href: '#' },
+        { label: 'GitHub', href: 'https://github.com/it24104290/HealthInsuranceWeb.git' },
         { label: 'Live Demo', href: '#' },
       ],
     },
+
+{
+      id: 'p7',
+      icon: '📊',
+      title: 'Nenasa - LMS & Mobile Application',
+      description:['Developed an Smart Learning Management System and Mobile App using React.js, Java with spring boot and mongoDB/postgreSQL. The system can be used in a private institutions or in universities with versatile features like role based access and JWT Authentication. Students and Teachers can access LMS for their day to day work and system will break the gap between student and teachers and make the bond stringer with options like reviews. LMS can be used through web and mobile App. Mobile App was designed with React native'
+
+      ],
+      tags: ['React','Java','MongoDB', 'PostgreSQL', 'REST API'],
+      images:[
+        'src/assets/nenasa/nenasa_mob.jpeg',
+        'src/assets/nenasa/nenasa_desk.1.png',
+        'src/assets/nenasa/nenasa_desk.2.png'
+      ],
+      links: [
+        {
+          label: 'GitHub', href: 'https://github.com/it24104290/Nenasa_lms_mobile.git'
+        },
+
+        { 
+          label: 'Live Demo', href: 'https://nenasamobile.netlify.app/login' 
+        },
+      ],
+
+      
+    },
+
     {
       id: 'p3',
       icon: '🤖',
@@ -119,12 +153,11 @@ export const portfolioData = {
         'Developed and hosted a responsive personal portfolio website to showcase my projects, technical skills, and professional experience. Built using React.js and CSS with a clean, modern user interface focused on user experience and accessibility. Integrated EmailJS to enable direct communication through a functional contact form. Designed the portfolio to provide a professional overview of my background and development work.',
       tags: ['React', 'Vite', 'CSS', 'JavaScript'],
       images: [
-        'https://via.placeholder.com/600x400?text=StudyBot+Chat',
-        'https://via.placeholder.com/600x400?text=PDF+Upload',
-        'https://via.placeholder.com/600x400?text=AI+Responses',
+        'src/assets/pf_dsk.png',
       ],
       links: [{ label: 'GitHub', href: '#' }],
     },
+
     {
       id: 'p5',
       icon: '📋',
@@ -133,9 +166,7 @@ export const portfolioData = {
         'Developed a comprehensive student course management system featuring login validation, user authentication, and CRUD operations with UI enhancements. Specifically led the review management feature, implementing both frontend and backend functionality with database integration to enable students to submit and view course reviews. ',
       tags: ['Java', 'Spring Boot', 'HTML', 'CSS',],
       images: [
-        'https://via.placeholder.com/600x400?text=Course+Dashboard',
-        'https://via.placeholder.com/600x400?text=Review+Management',
-        'https://via.placeholder.com/600x400?text=Student+Portal',
+        'src/assets/student_c.jpeg',
       ],
       links: [{ label: 'GitHub', href: '#' }],
     },
@@ -148,9 +179,10 @@ export const portfolioData = {
         'Designed the structure and implemented the code with C++ to control the ultrasonic sensor and LED indicators, ensuring accurate water level detection and real-time monitoring.',
       ],
       tags: ['Arduino', 'C++', 'IOT'],
-      video: 'path/to/your/video.mp4',
+      video: 'src/assets/iot.mp4',
       links: [{ label: 'GitHub', href: '#' }],
     },
+
   ],
 
   education: [

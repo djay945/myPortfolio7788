@@ -19,6 +19,7 @@ nav {
 .logo {
   position: absolute;
   left: 2rem;
+  top: 1rem;
   font-size: 18px;
   font-weight: 600;
   color: var(--accent);

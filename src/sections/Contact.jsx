@@ -89,7 +89,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="section-label">Let's Connect</div>
+      <div className="section-label">Let's Connect! Tell me about your project</div>
       <div className="section-title">Contact Me</div>
       <div className="section-sub">
         I'm always open to new opportunities and collaborations

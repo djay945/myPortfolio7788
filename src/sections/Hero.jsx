@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScroll'
 import { portfolioData } from '../data'
-import CVFile from '../assets/Dananjaya_Atapattu_CV.pdf'
+import CVFile from '../assets/Dananjaya_Atapattu_CV.1.pdf'
 import './Hero.css'
 
 const Hero = () => {
   useScrollAnimation()
   const [heroVisible, setHeroVisible] = useState(false)
-  const { personal, skills } = portfolioData
+  const { personal, skills, stats } = portfolioData
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,7 +25,7 @@ const Hero = () => {
   const downloadCV = () => {
     const link = document.createElement('a')
     link.href = CVFile
-    link.download = 'Dananjaya_Atapattu_CV.pdf'
+    link.download = 'Dananjaya_Atapattu_CV.1.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -85,6 +85,17 @@ const Hero = () => {
               <span key={skill} className="chip">
                 {skill}
               </span>
+            ))}
+          </div>
+          <div
+            className={`stats-container ${heroVisible ? 'show' : ''}`}
+            id="g7"
+          >
+            {stats.map((stat, index) => (
+              <div key={index} className="stat-item">
+                <div className="stat-value">{stat.value}</div>
+                <div className="stat-label">{stat.label}</div>
+              </div>
             ))}
           </div>
         </div>
