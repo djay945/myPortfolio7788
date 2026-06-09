@@ -31,7 +31,7 @@ export const portfolioData = {
 
   stats: [
     { label: 'Projects', value: '5+' },
-    { label: 'Work Experience', value: '2+ Years' },
+    { label: 'Work Experience', value: '1+ Years' },
   ],
   
 
