@@ -249,13 +249,13 @@ export const portfolioData = {
       id: 'c1',
       icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg',
       label: 'Mobile',
-      value: '0718923486/Whatsapp',
+      value: 'https://wa.link/9rxbvv',
     },
     {
       id: 'c2',
       icon: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg',
       label: 'Instagram',
-      value: 'instagram.com/your_handle',
+      value: 'https://www.instagram.com/dananjay._/',
     },
     {
       id: 'c3',
